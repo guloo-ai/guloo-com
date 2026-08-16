@@ -1,1 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" role="img" aria-labelledby="title desc"><title id="title">GULOO 穀露</title><desc id="desc">GULOO Life Embrace 生命之抱品牌識別</desc><g transform="translate(44,24)"><path d="M90 8 C136 34 148 92 119 136 C96 171 51 168 32 137 C14 107 28 61 57 35" fill="none" stroke="#8DAA7A" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/><path d="M66 78 C86 70 105 80 101 100 C98 119 77 126 62 110" fill="none" stroke="#8DAA7A" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/><circle cx="82" cy="59" r="9" fill="#D6B26B"/></g><g transform="translate(240,66)"><text x="0" y="45" font-family="Arial, Helvetica, sans-serif" font-size="68" font-weight="600" letter-spacing="2" fill="#8DAA7A">GULOO</text><text x="2" y="95" font-family="Noto Sans TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="34" letter-spacing="12" fill="#8C7A66">穀露</text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" role="img" aria-labelledby="title desc">
+<title id="title">GULOO 穀露</title>
+<desc id="desc">GULOO Life Embrace 生命之抱封頂版品牌識別。生命之抱符號搭配 GULOO 字標，最後一個 O 於下方保留呼吸缺口。</desc>
+<g transform="translate(285 8)">
+  <path d="M92 12 C137 42 149 97 125 140 C103 178 63 184 35 157 C12 134 16 88 42 48" fill="none" stroke="#7D8E73" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M67 86 C85 76 108 85 105 105 C102 125 81 137 64 120" fill="none" stroke="#7D8E73" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="84" cy="66" r="10" fill="#D6B26B"/>
+</g>
+<g transform="translate(112 190)" fill="none" stroke="#7D8E73" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M77 18 C56 1 19 10 14 39 C10 67 33 86 58 80 C73 77 81 66 81 52 L60 52"/>
+  <path d="M112 14 L112 54 C112 73 128 82 146 82 C164 82 179 72 179 54 L179 14"/>
+  <path d="M219 14 L219 81 L264 81"/>
+  <ellipse cx="318" cy="48" rx="36" ry="35"/>
+  <path d="M403 80 C383 76 372 61 373 46 C374 25 389 12 408 12 C428 12 444 27 444 48 C444 65 435 75 421 80"/>
+</g>
+<circle cx="258" cy="194" r="7" fill="#D6B26B"/>
+<text x="380" y="294" text-anchor="middle" font-family="Noto Sans TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="38" letter-spacing="18" fill="#8C7A66">穀露</text>
+</svg>
