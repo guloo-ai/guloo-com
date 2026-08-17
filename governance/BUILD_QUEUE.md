@@ -33,7 +33,7 @@ Make GULOO capable of receiving demand, converting it, fulfilling it, recording 
 | BF-003 | P0 | YELLOW | READY | Revenue | Draft GULOO conversion architecture for B2C + B2B2C | Review-ready funnel map, CTA rules, lead capture events, no live form mutation |
 | BF-004 | P0 | GREEN | DONE | Data | Define minimum product master schema for SKU, name, spec, BOM, standard cost, live stock, safety stock, Quickin mapping, allergen, owner | Versioned schema and validation checklist committed |
 | BF-005 | P0 | GREEN | DONE | Agent OS | Define Chairman Command Center minimum data contract | Command/status/owner/risk/approval/audit fields documented |
-| BF-006 | P0 | GREEN | BACKLOG | Finance | Define minimum unit economics and pricing data model | Standard cost, gross margin, contribution margin, price floor and owner fields documented |
+| BF-006 | P0 | GREEN | DONE | Finance | Define minimum unit economics and pricing data model | Standard cost, gross margin, contribution margin, price floor and owner fields documented |
 | BF-007 | P1 | YELLOW | BACKLOG | People | Create first-management-hire JD and 90-day scorecard | Review-ready COO/Chairman Office Lead JD and scorecard |
 | BF-008 | P1 | GREEN | BACKLOG | Security | Run repository governance and secret-exposure audit | No secret writes; report issues and remediation plan only |
 
