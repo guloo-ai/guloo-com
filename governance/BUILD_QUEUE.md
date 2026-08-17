@@ -28,7 +28,7 @@ Make GULOO capable of receiving demand, converting it, fulfilling it, recording 
 
 | ID | Priority | Risk | Status | Workstream | Task | Definition of Done |
 |---|---|---|---|---|---|---|
-| BF-001 | P0 | GREEN | READY | Governance | Establish 24H Build Factory governance baseline | BUILD_QUEUE, EXECUTION_POLICY, RUNBOOK, REPORT templates committed to main |
+| BF-001 | P0 | GREEN | DONE | Governance | Establish 24H Build Factory governance baseline | BUILD_QUEUE, EXECUTION_POLICY, RUNBOOK, REPORT templates committed to main |
 | BF-002 | P0 | GREEN | READY | Web | Audit guloo.com public pages for brand/logo consistency, broken links, metadata, sitemap and mobile baseline | Audit report with PASS/FAIL and actionable defects |
 | BF-003 | P0 | YELLOW | READY | Revenue | Draft GULOO conversion architecture for B2C + B2B2C | Review-ready funnel map, CTA rules, lead capture events, no live form mutation |
 | BF-004 | P0 | GREEN | READY | Data | Define minimum product master schema for SKU, name, spec, BOM, standard cost, live stock, safety stock, Quickin mapping, allergen, owner | Versioned schema and validation checklist committed |
