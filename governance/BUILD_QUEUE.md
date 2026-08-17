@@ -35,7 +35,7 @@ Make GULOO capable of receiving demand, converting it, fulfilling it, recording 
 | BF-005 | P0 | GREEN | DONE | Agent OS | Define Chairman Command Center minimum data contract | Command/status/owner/risk/approval/audit fields documented |
 | BF-006 | P0 | GREEN | DONE | Finance | Define minimum unit economics and pricing data model | Standard cost, gross margin, contribution margin, price floor and owner fields documented |
 | BF-007 | P1 | YELLOW | BACKLOG | People | Create first-management-hire JD and 90-day scorecard | Review-ready COO/Chairman Office Lead JD and scorecard |
-| BF-008 | P1 | GREEN | BACKLOG | Security | Run repository governance and secret-exposure audit | No secret writes; report issues and remediation plan only |
+| BF-008 | P1 | GREEN | DONE | Security | Run repository governance and secret-exposure audit | No secret writes; report issues and remediation plan only |
 
 ## Dispatch rule
 At each hourly run:
