@@ -30,11 +30,11 @@ Make GULOO capable of receiving demand, converting it, fulfilling it, recording 
 |---|---|---|---|---|---|---|
 | BF-001 | P0 | GREEN | DONE | Governance | Establish 24H Build Factory governance baseline | BUILD_QUEUE, EXECUTION_POLICY, RUNBOOK, REPORT templates committed to main |
 | BF-002 | P0 | GREEN | DONE | Web | Audit guloo.com public pages for brand/logo consistency, broken links, metadata, sitemap and mobile baseline | Audit report with PASS/FAIL and actionable defects |
-| BF-003 | P0 | YELLOW | WAITING_APPROVAL | Revenue | Draft GULOO conversion architecture for B2C + B2B2C | Review-ready funnel map, CTA rules, lead capture events, no live form mutation |
+| BF-003 | P0 | YELLOW | DONE | Revenue | Draft GULOO conversion architecture for B2C + B2B2C | Review-ready funnel map, CTA rules, lead capture events, no live form mutation |
 | BF-004 | P0 | GREEN | DONE | Data | Define minimum product master schema for SKU, name, spec, BOM, standard cost, live stock, safety stock, Quickin mapping, allergen, owner | Versioned schema and validation checklist committed |
 | BF-005 | P0 | GREEN | DONE | Agent OS | Define Chairman Command Center minimum data contract | Command/status/owner/risk/approval/audit fields documented |
 | BF-006 | P0 | GREEN | DONE | Finance | Define minimum unit economics and pricing data model | Standard cost, gross margin, contribution margin, price floor and owner fields documented |
-| BF-007 | P1 | YELLOW | WAITING_APPROVAL | People | Create first-management-hire JD and 90-day scorecard | Review-ready COO/Chairman Office Lead JD and scorecard |
+| BF-007 | P1 | YELLOW | DONE | People | Create first-management-hire JD and 90-day scorecard | Review-ready COO/Chairman Office Lead JD and scorecard |
 | BF-008 | P1 | GREEN | DONE | Security | Run repository governance and secret-exposure audit | No secret writes; report issues and remediation plan only |
 
 ## Dispatch rule
@@ -51,3 +51,6 @@ At each hourly run:
 ## WIP limit
 Maximum automatic work in progress: **1 task per hourly run**.
 This prevents uncontrolled parallel mutation and preserves traceability.
+
+## Approval note
+Chairman approved the BF-003 Revenue Conversion Architecture and BF-007 First Management Hire Design on 2026-08-18. This approval closes the design artifacts only. It does **not** by itself authorize live forms, CRM/LINE/commerce activation, public pricing changes, 104 publication, candidate outreach, hiring commitments, compensation commitments, or other external/live actions.
