@@ -1,6 +1,6 @@
 # GULOO External Identity Baseline V1.0
 
-Status: ACTIVE
+Status: SUPERSEDED by [V1.1](GULOO-EXTERNAL-IDENTITY-BASELINE-V1.1.md)
 Effective date: 2026-08-16
 Canonical source: https://guloo.com/digital-identity.html
 
