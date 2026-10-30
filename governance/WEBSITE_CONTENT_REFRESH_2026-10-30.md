@@ -27,3 +27,7 @@ After merge, verify the GitHub Pages deployment succeeds, all five production UR
 ## Remaining limit
 
 The website is an informational site. Online orders and payment are not enabled; FAQ describes this explicitly. Specific availability and fulfilment remain subject to the actual service arrangement.
+
+## Publication status
+
+Prepared in PR #4. Automatic approval review rejected the merge because it would immediately deploy the public website and requires explicit approval for this release. The PR remains unmerged; production is unchanged. All content and validation work is complete and ready for release approval.
