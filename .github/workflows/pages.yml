@@ -23,27 +23,29 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Build approved public artifact
+      - name: Build temporary maintenance artifact
         shell: bash
         run: |
           set -euo pipefail
           rm -rf _site
           mkdir -p _site
-          cp index.html about.html brand-story.html digital-identity.html faq.html robots.txt sitemap.xml CNAME _site/
-          cp -R assets _site/assets
-
-          # Fail closed if any internal company paths appear in the publication artifact.
-          for forbidden in governance agent-os data finance people revenue; do
-            test ! -e "_site/${forbidden}"
+          cp CNAME _site/CNAME
+          cat > _site/index.html <<'HTML'
+          <!doctype html><html lang="zh-Hant-TW"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,follow"><title>GULOO 穀露｜官網更新中</title><style>body{margin:0;min-height:100svh;display:grid;place-items:center;background:#faf8f2;color:#252822;font-family:system-ui,-apple-system,"Noto Sans TC",sans-serif;text-align:center}main{padding:32px}h1{font-size:clamp(26px,6vw,42px);letter-spacing:.06em}p{line-height:1.8}.brand{font-size:18px;letter-spacing:.12em}</style></head><body><main><p class="brand">GULOO 穀露</p><h1>官網更新中</h1><p>謝謝您的耐心等候。</p></main></body></html>
+          HTML
+          for page in about.html brand-story.html digital-identity.html faq.html 404.html; do
+            cp _site/index.html "_site/$page"
           done
-
-          # Verify expected public entrypoints exist.
-          test -f _site/index.html
-          test -f _site/robots.txt
-          test -f _site/sitemap.xml
-          test -f _site/CNAME
-          test -f _site/assets/guloo-logo.svg
-          test -f _site/assets/favicon.svg
+          printf 'User-agent: *\nAllow: /\nSitemap: https://guloo.com/sitemap.xml\n' > _site/robots.txt
+          printf '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://guloo.com/</loc></url></urlset>\n' > _site/sitemap.xml
+          # Publish only maintenance pages; retain all original sources in Git.
+          test "$(cat _site/CNAME | tr -d '\r\n')" = "guloo.com"
+          test ! -e _site/assets
+          for page in index.html about.html brand-story.html digital-identity.html faq.html 404.html; do
+            grep -q 'noindex,follow' "_site/$page"
+            grep -q '官網更新中' "_site/$page"
+          done
+          test "$(find _site -type f | wc -l)" -eq 9
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
